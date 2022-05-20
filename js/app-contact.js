@@ -342,10 +342,8 @@ sendForm.addEventListener('click', (e)=>{
 
         if (!inputItems[i].value){
             inputItems[i].classList.add('error');
-            console.log(inputItems[i].value)
         }
 
-       // console.log(emailTest(inputEmail))
     }
     
     if (emailTest(inputEmail)) {
