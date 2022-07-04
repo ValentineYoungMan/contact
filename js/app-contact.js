@@ -293,7 +293,7 @@ let block1Container = document.querySelector('.block1-container');
 
 //робимо це для того, щоб отримати ширину скролу, який ми будемо приховувати
 const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
-const lockPaddingValue2 = window.innerWidth - document.querySelector('.wrapper').offsetWidth;
+
 
 
 formButton.addEventListener('click', ()=>{
@@ -303,8 +303,7 @@ formButton.addEventListener('click', ()=>{
 
     body.style.paddingRight = lockPaddingValue;
     header.style.paddingRight = lockPaddingValue;
-    block1.style.paddingRight = lockPaddingValue;
-    block1Container.style.paddingLeft = lockPaddingValue2 + 17+'px';
+    
 })
 
 popupClose.addEventListener('click', (e)=>{
@@ -314,8 +313,7 @@ popupClose.addEventListener('click', (e)=>{
     body.classList.remove('_lock');
     body.style.paddingRight = '0px';
     header.style.paddingRight = '0px';
-    block1.style.paddingRight = '0px';
-    block1Container.style.paddingLeft = '17px';
+    
     
     
 })
